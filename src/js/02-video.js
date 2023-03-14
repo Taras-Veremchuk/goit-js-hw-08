@@ -12,7 +12,7 @@ player.on(
   }, 1000)
 );
 
-const playerCurrentTime = localStorage.getItem(STORAGE_KEY);
+const playerCurrentTime = localStorage.getItem(STORAGE_KEY) || 0;
 
 player
   .setCurrentTime(playerCurrentTime)
